@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist-*/
+coverage/
+.env*
+.npm-cache/
+.npm-cache-supabase/
+.eas-appdata/
+preview.html
+assets/app-icon-1024.png
+supabase/
+src/**/*.test.ts
+README.md
+*.log

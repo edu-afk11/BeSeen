@@ -1,0 +1,42 @@
+{
+  "name": "beseen-app",
+  "version": "0.1.0",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test",
+    "preflight": "node scripts/preflight.mjs",
+    "check:next-gen": "node scripts/check-next-gen.mjs",
+    "check:production": "npm run check && npm run preflight",
+    "export:android": "expo export --platform android --output-dir dist-android"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@supabase/supabase-js": "^2.115.0",
+    "expo": "~57.0.19",
+    "expo-constants": "~57.0.17",
+    "expo-device": "~57.0.1",
+    "expo-file-system": "~57.0.7",
+    "expo-image-picker": "~57.0.15",
+    "expo-location": "~57.0.15",
+    "expo-notifications": "~57.0.16",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-purchases": "^10.9.0",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-svg": "15.15.4",
+    "react-native-url-polyfill": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~5.9.2",
+    "vitest": "^5.0.0"
+  }
+}

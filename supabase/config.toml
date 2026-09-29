@@ -1,0 +1,32 @@
+project_id = "beseen"
+
+[functions.moderate-outfit]
+verify_jwt = true
+
+[functions.moderate-city-post]
+verify_jwt = true
+
+[functions.start-identity-verification]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true
+
+# External and database webhooks authenticate with dedicated secrets.
+[functions.identity-webhook]
+verify_jwt = false
+
+[functions.revenuecat-webhook]
+verify_jwt = false
+
+[functions.notify-match]
+verify_jwt = false
+
+[functions.notify-city-chat]
+verify_jwt = false
+
+[functions.cleanup-expired]
+verify_jwt = false
+
+[functions.auth-confirmed]
+verify_jwt = false
